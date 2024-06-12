@@ -5,7 +5,12 @@ import {ReactComponent as TrashIcon} from "../../assets/icons/trash.svg"
 import {ReactComponent as PrintIcon} from "../../assets/icons/print.svg"
 import { DocumentosDetail } from "../../components/DocumentosDetail/DocumentosDetail"
 import { Link } from "react-router-dom"
+
+import { ProyectosContext } from "../../context/ProyectosContext"
+import { useContext } from "react"
+
 export function ContratosDetail(){
+   const {openResumenDocument} = useContext(ProyectosContext)
     return(
         <div className="Contrats-Container">
             <GreetingHome/>
@@ -16,7 +21,9 @@ export function ContratosDetail(){
                     </Link>
                 </div>
                 <ul className="content-stuff">
-                    <li><ListIcon/></li>
+                    <li onClick={(e)=>{
+                        openResumenDocument()
+                    }}><ListIcon/></li>
                     <li><TrashIcon/></li>
                     <li><PrintIcon/></li>
                 </ul>

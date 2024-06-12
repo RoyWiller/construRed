@@ -18,6 +18,11 @@
   grid-template-columns: minmax(150px, 350px) 1fr;
   background-color: var(--main-bg-color);
 }
+.home-container.active{
+  display: grid;
+  grid-template-columns: minmax(50px, 100px) 1fr;
+  background-color: var(--main-bg-color);
+}
 
 /* * Login Styles */
 .Login-Content-all{

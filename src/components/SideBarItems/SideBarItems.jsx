@@ -6,28 +6,28 @@ import './SideBarItems.css'
 import { Link } from 'react-router-dom'
 
 
-export function SideBarItems(){
+export function SideBarItems({sideBarOpen}){
     return(
-        <ul className='list-content'>
-            <li className='list-items'>
+        <ul className={sideBarOpen === true ? "list-content close": "list-content"}>
+            <li className="list-items">
                 <Link to="/">
                     <HomeIcon />
                     <span>Inicio</span>
                 </Link>
             </li>
-            <li className='list-items'>
+            <li className="list-items">
                 <Link to="/contratos">
                     <DocumentIcon />
-                    <span>Contratos de venta</span>
+                    <span>Documentos</span>
                 </Link>
             </li>
-            <li className='list-items'>
+            <li className="list-items">
                 <Link>
                     <SettingIcon />
                     <span>Ajustes</span>
                 </Link>
             </li>
-            <li className='list-items'>
+            <li className="list-items">
                 <Link>
                     <MessageIcon />
                     <span>Mensajes</span>

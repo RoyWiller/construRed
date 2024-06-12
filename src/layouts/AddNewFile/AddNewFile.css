@@ -1,0 +1,51 @@
+.pdf-file-container{
+    background-color: #fff;
+    border-radius: 20px;
+    height: 80vh;
+    background-color: #fff;
+    padding: 10px 30px 10px 20px;
+    margin-top: 20px;
+}
+.file-pdf-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    & > div:nth-child(2){
+        display: flex;
+        gap: .8rem;
+        align-items: center;
+        justify-content: center;
+    }
+    & > div:first-child > span{
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    & > div:nth-child(2) > a{
+        padding: 25px;
+        border-radius: 20px;
+        background-color: var(--main-color);
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    & > div:last-child > span{
+        color: var(--gray-font-color);
+    }
+}
+
+
+.files-icon-drop{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    & svg{
+        padding: 1px;
+        border-radius: 50%;
+        border: 3px solid var(--main-color);
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+}

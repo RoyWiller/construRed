@@ -8,11 +8,6 @@
     
 }
 
-.title-aside{
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 40px 0 15px 35px;
-}
 .logout-content{
     align-self: center;
     background-color: var(--main-color);
@@ -31,4 +26,39 @@
         color: #fff;
         font-weight: bold;
     }
+    & > svg{
+        display: none;
+    }
+}
+.logout-content.close{
+    width: 50px;
+    min-width: fit-content;
+    height: 50px;
+    border-radius: 50%;
+    & > a{
+        display: none;
+    }
+    & > svg{
+        display: block;
+        width: 25px;
+        height: 25px;
+        stroke: #fff;
+        fill: #fff;
+    }
+}
+
+/* * Logo imagen */
+.title-aside{
+    width: 100%;
+}
+.logo-grande{
+    width: 80%;
+    margin: 30px 20px;
+}
+.logo-grande.off, .logo-chico.off{
+    display: none;
+}
+.logo-chico{
+    width: 70%;
+    margin: 30px 0 0 10px;
 }

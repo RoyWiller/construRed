@@ -1,17 +1,18 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 export const ProyectosContext = createContext();
 
 export function ProyectosContextProvider(props){
 
-    function openDocuemnt(){
-        
-    }
+    // * React useState
+    const [sideBarOpen, setSideBarOpen] = useState(false)
+
 
     return(
         <ProyectosContext.Provider
         value={{
-            openDocuemnt:openDocuemnt
+             sideBarOpen: sideBarOpen,
+             setSideBarOpen: setSideBarOpen
         }}>
             {props.children}
         </ProyectosContext.Provider>
