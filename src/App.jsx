@@ -15,7 +15,7 @@ function App() {
       <Router>
         <AsideBar/>
         <Routes>
-          <Route path="/inicio" element={<InicioHome/>}/>
+          <Route path="/" element={<InicioHome/>}/>
           <Route path="/contratos" element={<ContratosList/>}/>
           <Route path="/contratos/create-contrato" element={<CreateDocument/>}/>
           <Route path="/contratos/detail" element={<ContratosDetail/>}/>

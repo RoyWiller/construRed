@@ -14,7 +14,7 @@ export function ContratosList(){
             <GreetingHome/>
             <div className="content-directions">
                 <div className="arrow-back">
-                    <Link to="/inicio">
+                    <Link to="/">
                         <LeftArrow/>
                     </Link>
                 </div>
