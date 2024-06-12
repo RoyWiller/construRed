@@ -4,7 +4,6 @@ import { ContratosDetail } from './layouts/ContratosDetail/ContratosDetail';
 import { ContratosList } from './layouts/ContratosList/ContratosList';
 import { CreateDocument } from './layouts/CreateDocument/CreateDocument';
 import { InicioHome } from './layouts/InicioHome/InicioHome';
-import { Contratos } from './views/Contratos/Contratos';
 import { Home } from './views/Home/Home';
 import { Login } from './views/Login/Login';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';

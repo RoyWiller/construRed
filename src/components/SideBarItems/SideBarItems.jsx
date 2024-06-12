@@ -10,7 +10,7 @@ export function SideBarItems(){
     return(
         <ul className='list-content'>
             <li className='list-items'>
-                <Link to="/inicio">
+                <Link to="/">
                     <HomeIcon />
                     <span>Inicio</span>
                 </Link>
