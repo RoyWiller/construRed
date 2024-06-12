@@ -1,0 +1,33 @@
+.SearchBar-all{
+    display: flex;
+    gap: .5rem;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+}
+.searchBar-content{
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    & svg{
+        width: 25px;
+        fill: gray;
+    }
+}
+.searchBar-content > input{
+    border: none;
+    font-size: 1.05rem;
+    padding-left: 10px;
+    color: gray;
+    &:focus{
+        outline: none;
+    }
+}
+.SearchBar-all > button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #757575;
+    cursor: pointer;
+}

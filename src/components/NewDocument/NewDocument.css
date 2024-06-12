@@ -1,0 +1,42 @@
+.createDocument-container{
+    background-color: #fff;
+    height: 80%;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.newDocument-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.priority-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.priority-title{
+    width: 250px;
+
+    & > h3{
+        font-size: 1.5rem;
+        font-weight: 200;
+        margin: 8px 0;
+    }
+    & > span{
+        font-size: .95rem;
+    }
+}
+.level-priority{
+    display: flex;
+    gap: 3rem;
+    & > li{
+        background-color: #fff;
+        width: 120px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 20px;
+        cursor: pointer;
+        border: 3px solid var(--main-color);
+    }
+}

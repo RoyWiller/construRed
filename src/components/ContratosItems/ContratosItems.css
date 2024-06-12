@@ -1,0 +1,25 @@
+tr{
+
+    display: grid;
+    grid-template-columns: minmax(60px, 90px) minmax(115px, 2fr) 
+    minmax(130px, 1fr) minmax(90px, 120px) minmax(80px, 100px) 
+    minmax(110px, 120px) minmax(85px, 120px) 60px;
+    
+
+    & > td{
+        text-align: left;
+        padding: 15px 0 15px 10px;
+        border-top: 1px solid rgb(228, 226, 226);
+        color: var(--gray-font-color);
+        font-weight: bold;
+        font-size: .95rem;
+
+        & > a{
+            color: var(--main-color);
+        }
+    }
+
+    & > td:nth-child(2){font-weight: bold; color: #000;}
+    & > td:nth-child(4){font-weight: bold; color: #000; }
+    & > td:nth-child(5){font-weight: bold; color: #000;}
+}

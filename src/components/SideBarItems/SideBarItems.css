@@ -1,0 +1,28 @@
+.list-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.list-items{
+    list-style: none;
+    background-color: #fff;
+    & a{
+        width: 100%;
+        display: flex;
+        padding: 15px;
+        cursor: pointer;
+        gap: 1.2rem;
+        align-items: center;
+        font-size: 1.1rem;
+    }
+    & svg{
+        width: 20px;
+        height: 20px;
+        stroke: #000;
+    }
+    & span{
+        font-weight: bold;
+        color: var(--main-color);
+    }
+}
