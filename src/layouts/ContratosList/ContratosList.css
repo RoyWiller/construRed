@@ -40,6 +40,7 @@
     display: flex;
     align-items: center;
     gap: .8rem;
+    position: relative;
     & li{
         cursor: pointer;
     }
@@ -51,6 +52,18 @@
         width: 21px;
         height: 21px;
     }
+}
+
+.calendar-input{
+    position: absolute;
+    top: 4px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding-left: 8px;
+    font-size: 1.2rem;
+    border: none;
 }
 
 /* * Table Styles */

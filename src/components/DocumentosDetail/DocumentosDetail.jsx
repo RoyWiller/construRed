@@ -1,15 +1,10 @@
 import { ResumenDocument } from "../ResumenDocument/ResumenDocument";
 import "./DocumentosDetail.css";
-import React, { useRef } from "react";
 
-export function DocumentosDetail() {
+export function DocumentosDetail({resumeOpen}) {
 
-  const contentDocument = useRef(null)
-
-  console.log(contentDocument.current);
-  
   return (
-    <div className="document-container-all openResum" ref={contentDocument}>
+    <div className={resumeOpen === true ? "document-container-all" : "document-container-all close"}>
       <div className="document-content-bg">
         <div className="document-main-content">
           <div className="title-document">
@@ -78,7 +73,8 @@ export function DocumentosDetail() {
           </div>
         </div>
       </div>
-      <ResumenDocument/>
+      <ResumenDocument 
+      resumeOpen={resumeOpen}/>
     </div>
   );
 }

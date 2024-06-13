@@ -10,7 +10,13 @@ import { ProyectosContext } from "../../context/ProyectosContext"
 import { useContext } from "react"
 
 export function ContratosDetail(){
-   const {openResumenDocument} = useContext(ProyectosContext)
+
+    const {resumeOpen, setResumeOpen} = useContext(ProyectosContext)
+
+    function openResumenDocument(){
+        setResumeOpen(!resumeOpen)
+    }
+   
     return(
         <div className="Contrats-Container">
             <GreetingHome/>
@@ -21,14 +27,15 @@ export function ContratosDetail(){
                     </Link>
                 </div>
                 <ul className="content-stuff">
-                    <li onClick={(e)=>{
+                    <li onClick={()=>{
                         openResumenDocument()
                     }}><ListIcon/></li>
                     <li><TrashIcon/></li>
                     <li><PrintIcon/></li>
                 </ul>
             </div>
-            <DocumentosDetail />
+            <DocumentosDetail 
+            resumeOpen={resumeOpen}/>
         </div>
     );
 }

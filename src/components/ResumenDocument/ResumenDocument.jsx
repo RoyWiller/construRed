@@ -2,9 +2,9 @@ import './ResumenDocument.css'
 import {ReactComponent as TrashIcon} from "../../assets/icons/trash.svg"
 import {ReactComponent as PlusIcon} from "../../assets/icons/plus-icon.svg"
 import { Link } from 'react-router-dom';
-export function ResumenDocument(){
+export function ResumenDocument({resumeOpen}){
     return(
-        <div className='resumen-project-container'>
+        <div className={resumeOpen === true ? "resumen-project-container" : "resumen-project-container close"}>
             <div className='info-resumen-content'>
                 <h3>Resumen</h3>
                 <p><b>Cliente:</b> Gustavo Cerati</p>

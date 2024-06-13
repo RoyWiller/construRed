@@ -6,6 +6,9 @@
     flex-direction: column;
     gap: 3rem;
 }
+.resumen-project-container.close{
+    display: none;
+}
 .info-resumen-content{
     display: flex;
     flex-direction: column;

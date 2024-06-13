@@ -20,9 +20,6 @@ export function AsideBar({setSideBarOpen, sideBarOpen}){
                     <img src={LogoComplete} alt="" className={sideBarOpen === true ? "logo-grande off": "logo-grande"}/>
                     <img src={LogoChequeto} alt="" className={sideBarOpen === true ? "logo-chico": "logo-chico off"}/>
                 </div>
-            {/* <h2 className="title-aside" onClick={()=>{
-                openAsidebar()
-            }}>ConstruRed</h2> */}
                 <SideBarItems 
                 sideBarOpen={sideBarOpen}
                 setSideBarOpen={setSideBarOpen}/>

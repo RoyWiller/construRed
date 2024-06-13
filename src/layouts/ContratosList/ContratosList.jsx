@@ -21,7 +21,10 @@ export function ContratosList(){
                 <ul className="content-stuff">
                     <li><ListIcon/></li>
                     <li><CategoryIcon/></li>
-                    <li><CalendarIcon/></li>
+                    <li>
+                        <CalendarIcon/>
+                        <input type="date" className="calendar-input"/>
+                    </li>
                 </ul>
             </div>
             <div className="tablen-cotainer">

@@ -1,7 +1,10 @@
 import {ReactComponent as HomeIcon} from '../../assets/icons/home.svg'
 import {ReactComponent as DocumentIcon} from '../../assets/icons/document.svg'
-import {ReactComponent as SettingIcon} from '../../assets/icons/gear.svg'
+import {ReactComponent as PhoneIcon} from '../../assets/icons/phone-icon.svg'
 import {ReactComponent as MessageIcon} from '../../assets/icons/message.svg'
+import {ReactComponent as PerfilIcon} from '../../assets/icons/user-icon.svg'
+import {ReactComponent as FolderIcon} from '../../assets/icons/folder-icon.svg'
+import {ReactComponent as WalletIcon} from '../../assets/icons/card-icon.svg'
 import './SideBarItems.css'
 import { Link } from 'react-router-dom'
 
@@ -16,6 +19,18 @@ export function SideBarItems({sideBarOpen}){
                 </Link>
             </li>
             <li className="list-items">
+                <Link to="/">
+                    <PerfilIcon />
+                    <span>Perfil</span>
+                </Link>
+            </li>
+            <li className="list-items">
+                <Link to="/">
+                    <FolderIcon />
+                    <span>Proyectos</span>
+                </Link>
+            </li>
+            <li className="list-items">
                 <Link to="/contratos">
                     <DocumentIcon />
                     <span>Documentos</span>
@@ -23,14 +38,20 @@ export function SideBarItems({sideBarOpen}){
             </li>
             <li className="list-items">
                 <Link>
-                    <SettingIcon />
-                    <span>Ajustes</span>
+                    <WalletIcon />
+                    <span>Pagos</span>
                 </Link>
             </li>
             <li className="list-items">
                 <Link>
                     <MessageIcon />
                     <span>Mensajes</span>
+                </Link>
+            </li>
+            <li className="list-items">
+                <Link>
+                    <PhoneIcon />
+                    <span>Atención al cliente</span>
                 </Link>
             </li>
         </ul>

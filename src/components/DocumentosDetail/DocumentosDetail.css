@@ -1,8 +1,12 @@
 .document-container-all{margin-top: 30px;}
-.document-container-all.openResum{
+.document-container-all{
     display: grid;
     gap: 2rem;
     grid-template-columns: minmax(500px, 1fr) minmax(250px, 340px);
+}
+.document-container-all.close{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .document-content-bg{
     border-radius: 20px;
