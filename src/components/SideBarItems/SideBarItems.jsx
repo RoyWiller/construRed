@@ -13,19 +13,19 @@ export function SideBarItems({sideBarOpen}){
     return(
         <ul className={sideBarOpen === true ? "list-content close": "list-content"}>
             <li className="list-items">
-                <Link to="/">
+                <Link to="/inicio">
                     <HomeIcon />
                     <span>Inicio</span>
                 </Link>
             </li>
             <li className="list-items">
-                <Link to="/">
+                <Link to="/inicio">
                     <PerfilIcon />
                     <span>Perfil</span>
                 </Link>
             </li>
             <li className="list-items">
-                <Link to="/">
+                <Link to="/inicio">
                     <FolderIcon />
                     <span>Proyectos</span>
                 </Link>

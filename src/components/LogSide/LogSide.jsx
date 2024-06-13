@@ -1,6 +1,7 @@
 import {ReactComponent as User} from "../../assets/icons/user.svg"
 import {ReactComponent as Lock} from "../../assets/icons/lock.svg"
 import './LogSide.css'
+import { Link } from "react-router-dom";
 
 export function LogSide(){
     return(
@@ -25,7 +26,7 @@ export function LogSide(){
             </form>
             <div className="registrer-div">
                 <p>Don't you have account?</p>
-                <p>Sign Up <a href="#">Here</a></p>
+                <p>Sign Up <Link to="/sign-up">Here</Link></p>
             </div>
         </div>
     );

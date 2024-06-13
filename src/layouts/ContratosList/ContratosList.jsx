@@ -6,15 +6,24 @@ import {ReactComponent as CategoryIcon} from "../../assets/icons/category.svg"
 import {ReactComponent as CalendarIcon} from "../../assets/icons/calendar.svg"
 import { GreetingHome } from "../../components/GreetingHome/GreetingHome";
 import { Link } from "react-router-dom";
+import { AsideBar } from "../AsideBar/AsideBar";
 
+import { ProyectosContext } from "../../context/ProyectosContext";
+import { useContext } from "react";
 
 export function ContratosList(){
+
+    const {sideBarOpen, setSideBarOpen} = useContext(ProyectosContext)
     return(
+        <div className={sideBarOpen === true ? "home-container active":"home-container"}>
+            <AsideBar 
+        setSideBarOpen={setSideBarOpen}
+        sideBarOpen={sideBarOpen}/>
         <div className="Contrats-Container">
             <GreetingHome/>
             <div className="content-directions">
                 <div className="arrow-back">
-                    <Link to="/">
+                    <Link to="/inicio">
                         <LeftArrow/>
                     </Link>
                 </div>
@@ -59,6 +68,7 @@ export function ContratosList(){
                     </tbody>
                 </table>
             </div>
+        </div>
         </div>
     );
 }
