@@ -1,3 +1,39 @@
 .form-login .input-registrer-submit{
     margin-top: 20px !important;
 }
+.error-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 10px;
+    animation: shake .4s;
+    
+    & svg{
+        width: 20px;
+        height: 18px;
+        fill: red;
+    }
+    & p{
+        font-size: 1.15rem;
+        font-weight: bold;
+        color: red;
+    }
+}
+
+@keyframes showMessage{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: .7;
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); opacity: 0;}
+    25% { transform: translateX(-8px); }
+    50% { transform: translateX(8px); }
+    75% { transform: translateX(-8px); }
+    100% { transform: translateX(0); opacity: .7;}
+}

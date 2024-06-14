@@ -21,6 +21,7 @@
     color: #4D4D4D;
 }
 .form-login input[type="text"],
+.form-login input[type="email"],
 .form-login input[type="password"]{
     width: 100%;
     border: none;

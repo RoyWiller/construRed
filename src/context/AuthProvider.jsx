@@ -8,11 +8,16 @@ export function AuthtProvider(props){
 
     const [isAuthenticated, setIsAuthenticated] = useState(false)
 
+    function saveUser(){
+        setIsAuthenticated(!isAuthenticated)
+    }
+
 
     return(
         <AuthContext.Provider
         value={{
-             isAuthenticated:isAuthenticated
+             isAuthenticated:isAuthenticated,
+             saveUser:saveUser
         }}>
             {props.children}
         </AuthContext.Provider>
@@ -21,20 +26,3 @@ export function AuthtProvider(props){
 
 export const useAuth = () => useContext(AuthContext)
 
-
-
-// import { useContext, createContext, useState, useEffect } from "react";
-
-// interface AuthProviderProps{
-//     children: React.ReactNode;
-// }
-
-// const AuthContext = createContext({
-//     isAuthenticated: false,
-// });
-
-// export function AuthProvider({children}: AuthProviderProps){
-    
-//     const [isAuthenticated, setIsAuthenticated] = useState(false);
-//     return <AuthContext.Provider value={{isAuthenticated, setIsAuthenticated}}>{children}</AuthContext.Provider>
-// }

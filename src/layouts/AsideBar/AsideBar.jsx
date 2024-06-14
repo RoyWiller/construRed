@@ -1,12 +1,15 @@
 import { SideBarItems } from "../../components/SideBarItems/SideBarItems";
 import './AsideBar.css'
-import { ProyectosContext } from "../../context/ProyectosContext";
+import { AuthContext } from "../../context/AuthProvider";
 import { useContext } from "react";
 import LogoComplete from "../../assets/logo/logo-completed.png"
 import LogoChequeto from "../../assets/logo/logo-chequeto.png"
 import {ReactComponent as LogOutIcon} from "../../assets/icons/log-out.svg"
+import { Link } from "react-router-dom";
 
 export function AsideBar({setSideBarOpen, sideBarOpen}){
+
+    const {saveUser} = useContext(AuthContext)
 
     function openAsidebar(){
         setSideBarOpen(!sideBarOpen)
@@ -25,7 +28,9 @@ export function AsideBar({setSideBarOpen, sideBarOpen}){
                 setSideBarOpen={setSideBarOpen}/>
             </div>
             <div className={sideBarOpen === true ? "logout-content close": "logout-content"}>
-                <a href="#">Log Out</a>
+                <Link to="/" onClick={()=>{
+                    saveUser()
+                }}>Log Out</Link>
                 <LogOutIcon/>
             </div>
         </div>
