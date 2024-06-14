@@ -47,9 +47,4 @@
     flex-direction: column;
     gap: .8rem;
     margin-top: 20px;
-    & span{
-        background-color: var(--main-bg-color);
-        padding: 10px;
-        border-radius: 10px;
-    }
 }

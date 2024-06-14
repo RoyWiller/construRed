@@ -1,0 +1,15 @@
+.recent-files-container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    grid-column: 1/2;
+
+    & > h3{
+        font-size: 1.4rem;
+    }
+}
+.files-content{
+    display: flex;
+    margin-top: 20px;
+    gap: 2.5rem;
+}

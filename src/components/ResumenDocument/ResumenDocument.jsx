@@ -2,6 +2,7 @@ import './ResumenDocument.css'
 import {ReactComponent as TrashIcon} from "../../assets/icons/trash.svg"
 import {ReactComponent as PlusIcon} from "../../assets/icons/plus-icon.svg"
 import { Link } from 'react-router-dom';
+import { FilesItems } from '../FilesItems/FilesItems';
 export function ResumenDocument({resumeOpen}){
     return(
         <div className={resumeOpen === true ? "resumen-project-container" : "resumen-project-container close"}>
@@ -20,10 +21,9 @@ export function ResumenDocument({resumeOpen}){
                     </div>
                 </div>
                 <div className='content-files'>
-                    <span>files</span>
-                    <span>files</span>
-                    <span>files</span>
-                    <span>files</span>
+                    <FilesItems />
+                    <FilesItems />
+                    <FilesItems />
                 </div>
             </div>
         </div>
